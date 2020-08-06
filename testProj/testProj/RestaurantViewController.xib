@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="OpenSans-Bold_4.ttf">
+            <string>OpenSans-Bold</string>
+            <string>OpenSans-Bold</string>
+            <string>OpenSans-Bold</string>
+            <string>OpenSans-Bold</string>
+            <string>OpenSans-Bold</string>
+            <string>OpenSans-Bold</string>
+            <string>OpenSans-Bold</string>
+            <string>OpenSans-Bold</string>
+            <string>OpenSans-Bold</string>
+        </mutableArray>
+        <mutableArray key="OpenSans-Regular_4.ttf">
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+            <string>OpenSans</string>
+        </mutableArray>
+        <mutableArray key="OpenSans-Semibold_4.ttf">
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RestaurantViewController">
+            <connections>
+                <outlet property="AC" destination="uYd-R1-5gX" id="sSP-jy-7aM"/>
+                <outlet property="FBbutton" destination="Uqh-YA-WWy" id="7Xz-wE-jZH"/>
+                <outlet property="add_txtvw" destination="Vql-g8-OlL" id="XLQ-aE-fyd"/>
+                <outlet property="ambLbl" destination="sVO-Cd-chZ" id="XMp-G7-w2g"/>
+                <outlet property="arrow" destination="D4V-sk-5we" id="aIV-AE-Byr"/>
+                <outlet property="branch_vw" destination="hRC-TA-0gy" id="eI0-K2-VKt"/>
+                <outlet property="cards" destination="uNf-HX-G33" id="Lbc-yY-bqa"/>
+                <outlet property="cuisine_lbl1" destination="BxP-pF-05b" id="HkL-FK-awQ"/>
+                <outlet property="env_lbl" destination="VUu-5D-Zcd" id="5Z3-1h-e1n"/>
+                <outlet property="friD" destination="sps-oI-Ib0" id="9LT-iN-L5Q"/>
+                <outlet property="friL" destination="lCw-ua-gI8" id="3zk-ld-3kQ"/>
+                <outlet property="friLbl" destination="dMP-Jo-3Nd" id="0Gq-Wr-j2n"/>
+                <outlet property="hPageControl" destination="ZdT-y4-mrj" id="gXZ-0y-68y"/>
+                <outlet property="info_btn" destination="U2W-x8-HHY" id="lXb-fz-ubs"/>
+                <outlet property="info_view" destination="VvS-rm-1NH" id="6lr-2c-NnH"/>
+                <outlet property="like_btn" destination="JEY-W0-Cae" id="acd-tg-aNc"/>
+                <outlet property="like_lbl" destination="OeX-UT-GjU" id="Egw-Q2-dNt"/>
+                <outlet property="map_btn" destination="EY5-Lm-oaU" id="ky7-Ir-VYM"/>
+                <outlet property="menu_btn" destination="2Ds-ud-Y4k" id="Ea0-IC-n2z"/>
+                <outlet property="monD" destination="OEn-LF-0vx" id="YWI-BT-QGK"/>
+                <outlet property="monL" destination="CHx-Rj-ake" id="DGa-7b-oUI"/>
+                <outlet property="monLbl" destination="D4h-EJ-TyZ" id="C7v-oR-Le0"/>
+                <outlet property="photoVw" destination="s4c-8y-tXt" id="ohk-Pi-t8G"/>
+                <outlet property="photo_btn" destination="HWj-Cz-DVS" id="NIA-eG-aIM"/>
+                <outlet property="photo_tbl" destination="ett-Hm-N6O" id="TK3-mv-6QY"/>
+                <outlet property="quality_lbl" destination="OF1-wg-Hgs" id="Hbd-ZO-Kih"/>
+                <outlet property="rate_btn" destination="vVW-Xr-fmx" id="B4B-7E-TS4"/>
+                <outlet property="rate_lbl" destination="YL0-5o-18d" id="iag-Uf-9Ca"/>
+                <outlet property="rate_view" destination="qCh-Qm-iyy" id="qQo-DX-iuH"/>
+                <outlet property="reserve" destination="4Gv-hP-dEu" id="h7b-RS-9RX"/>
+                <outlet property="rest_scroll" destination="YZ6-he-tqw" id="cXe-NG-MrS"/>
+                <outlet property="restaurant_branch_name" destination="Zfo-Ec-UuT" id="C0M-Kl-V61"/>
+                <outlet property="restname" destination="ib8-kP-D8A" id="OwQ-0v-Wjk"/>
+                <outlet property="review_btn" destination="ANI-R7-yvw" id="U2s-aZ-sXY"/>
+                <outlet property="review_lbl" destination="ncT-sr-Ya3" id="6vT-4G-7w3"/>
+                <outlet property="review_txtvw" destination="Oki-8k-mVY" id="rzg-Rh-DYO"/>
+                <outlet property="satD" destination="LNW-R8-UE1" id="2Zs-Dj-jAW"/>
+                <outlet property="satL" destination="3hY-XW-N5E" id="grH-rx-wSp"/>
+                <outlet property="satLbl" destination="akS-nH-3No" id="mV2-f7-0h7"/>
+                <outlet property="service_lbl" destination="RMe-vE-Bi7" id="Ow0-g7-tpJ"/>
+                <outlet property="showImgvw" destination="x4v-9n-sb9" id="tiF-wi-GXM"/>
+                <outlet property="slide_imgvw" destination="lT9-PI-GuB" id="QGn-38-ARZ"/>
+                <outlet property="smoke" destination="WwE-L5-fje" id="ZGw-DK-hSy"/>
+                <outlet property="sunD" destination="MCu-du-ih0" id="rWn-Hl-OGS"/>
+                <outlet property="sunL" destination="qZ4-Vb-AN6" id="qaF-eD-B4K"/>
+                <outlet property="sunLbl" destination="5it-PO-NGH" id="4yv-Rr-oDM"/>
+                <outlet property="thuD" destination="3yh-oX-hph" id="Ekg-48-1TZ"/>
+                <outlet property="thuL" destination="fyV-YM-zAW" id="Swd-Uq-k1h"/>
+                <outlet property="thuLbl" destination="yDr-5z-z39" id="tUj-ZG-uwq"/>
+                <outlet property="topvw" destination="845-X4-A4Q" id="QRa-HY-8Sh"/>
+                <outlet property="tueD" destination="0Fa-YT-cO5" id="fay-db-CsK"/>
+                <outlet property="tueL" destination="9QT-Bh-oOg" id="mjN-9M-V2a"/>
+                <outlet property="tueLbl" destination="POd-qf-1IX" id="NH2-rO-aFG"/>
+                <outlet property="value_lbl" destination="WJE-Iz-mrG" id="ypO-zP-wsk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wedD" destination="Uvj-bd-YXD" id="w0Q-HA-ObQ"/>
+                <outlet property="wedL" destination="qcH-J6-cyj" id="Uje-Tx-x2m"/>
+                <outlet property="wedLbl" destination="Ev3-DX-zad" id="X24-1F-Tka"/>
+                <outlet property="wifi" destination="D0R-QE-0Qz" id="vFM-Zh-hG3"/>
+                <outlet property="wreview_btn" destination="Loh-FN-6U8" id="3Ks-KR-EQH"/>
+                <outlet property="wrview_vew" destination="a6a-8o-Rwt" id="MOm-oJ-Taw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Uqh-YA-WWy" customClass="FBSDKLoginButton">
+                    <rect key="frame" x="8" y="100" width="285" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" id="845-X4-A4Q">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="235"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bella Italia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ib8-kP-D8A">
+                            <rect key="frame" x="8" y="7" width="254" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="17"/>
+                            <color key="textColor" red="1" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" id="hRC-TA-0gy">
+                            <rect key="frame" x="8" y="27" width="161" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dhaka" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zfo-Ec-UuT">
+                                    <rect key="frame" x="0.0" y="4" width="103" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="13"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropdown_arrow" id="D4V-sk-5we">
+                                    <rect key="frame" x="103" y="11" width="13" height="8"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="nAG-vG-Z15">
+                            <rect key="frame" x="8" y="49" width="296" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Italian" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BxP-pF-05b">
+                                    <rect key="frame" x="0.0" y="4" width="43" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="13"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="soM-NH-01D">
+                            <rect key="frame" x="72" y="120" width="43" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="red_checkin"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vVW-Xr-fmx">
+                            <rect key="frame" x="134" y="120" width="43" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="red_rate"/>
+                            <connections>
+                                <action selector="rate_action:" destination="-1" eventType="touchUpInside" id="Qgm-Y7-jrF"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Loh-FN-6U8">
+                            <rect key="frame" x="193" y="120" width="43" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="red_review"/>
+                            <connections>
+                                <action selector="write_review:" destination="-1" eventType="touchUpInside" id="Wz2-CY-rBw"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check-In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LjY-a4-xpe">
+                            <rect key="frame" x="74" y="160" width="40" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="9"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YL0-5o-18d">
+                            <rect key="frame" x="139" y="160" width="33" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="9"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ncT-sr-Ya3">
+                            <rect key="frame" x="193" y="160" width="43" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="9"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recommend" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bwn-17-01B">
+                            <rect key="frame" x="249" y="161" width="62" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="9"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="S1Q-YZ-pSg">
+                            <rect key="frame" x="258" y="120" width="43" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="red_recommend"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="U2W-x8-HHY">
+                            <rect key="frame" x="0.0" y="196" width="56" height="39"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="info_select"/>
+                            <connections>
+                                <action selector="info_action:" destination="-1" eventType="touchUpInside" id="M3n-R9-WIf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2Ds-ud-Y4k">
+                            <rect key="frame" x="56" y="196" width="57" height="39"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="menu"/>
+                            <connections>
+                                <action selector="menu_action:" destination="-1" eventType="touchUpInside" id="Lr3-9W-f2L"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ANI-R7-yvw">
+                            <rect key="frame" x="113" y="196" width="81" height="39"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="review"/>
+                            <connections>
+                                <action selector="review_action:" destination="-1" eventType="touchUpInside" id="LuX-Kw-TmC"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HWj-Cz-DVS">
+                            <rect key="frame" x="194" y="196" width="64" height="39"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="photo"/>
+                            <connections>
+                                <action selector="photo_action:" destination="-1" eventType="touchUpInside" id="0pI-Ax-s04"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EY5-Lm-oaU">
+                            <rect key="frame" x="258" y="196" width="62" height="39"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="map"/>
+                            <connections>
+                                <action selector="map_action:" destination="-1" eventType="touchUpInside" id="4yp-d7-DWZ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JEY-W0-Cae">
+                            <rect key="frame" x="13" y="120" width="43" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="red_like"/>
+                            <connections>
+                                <action selector="like_action:" destination="-1" eventType="touchUpInside" id="bgH-eD-CL7"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Like" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OeX-UT-GjU">
+                            <rect key="frame" x="18" y="161" width="33" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="9"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="-1" contentMode="scaleToFill" id="YZ6-he-tqw">
+                    <rect key="frame" x="0.0" y="235" width="320" height="443"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="EIx-my-a6e"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="385" y="239"/>
+        </view>
+        <view contentMode="scaleToFill" id="VvS-rm-1NH">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="840"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTACT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KSs-eh-hb2">
+                    <rect key="frame" x="23" y="13" width="77" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="13"/>
+                    <color key="textColor" red="1" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" id="KYQ-nY-yeS">
+                    <rect key="frame" x="22" y="33" width="289" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="35, Gulshan South Avenue, Gulshan 1, Dhaka-1212." textAlignment="natural" id="Vql-g8-OlL">
+                    <rect key="frame" x="20" y="35" width="286" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="2YY-fr-Ool"/>
+                    </connections>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOURS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aaK-ZF-vMl">
+                    <rect key="frame" x="23" y="146" width="77" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="13"/>
+                    <color key="textColor" red="1" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" id="fxJ-Nh-zkg">
+                    <rect key="frame" x="22" y="166" width="289" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AMBIENCE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sYQ-g8-LIe">
+                    <rect key="frame" x="23" y="438" width="87" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="13"/>
+                    <color key="textColor" red="1" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" id="etG-hw-f8q">
+                    <rect key="frame" x="22" y="458" width="289" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADDITIONS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rzY-Ok-4xt">
+                    <rect key="frame" x="23" y="513" width="96" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="13"/>
+                    <color key="textColor" red="1" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" id="pUb-xT-mHG">
+                    <rect key="frame" x="22" y="533" width="289" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cross" id="WwE-L5-fje">
+                    <rect key="frame" x="23" y="647" width="42" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tic" id="uYd-R1-5gX">
+                    <rect key="frame" x="23" y="699" width="42" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tic" id="4Gv-hP-dEu">
+                    <rect key="frame" x="23" y="751" width="42" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smoking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="685-4s-CfA">
+                    <rect key="frame" x="75" y="658" width="61" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Air-conditioned" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="px2-Pb-afn">
+                    <rect key="frame" x="75" y="710" width="104" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Takes reservations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xib-xA-BSw">
+                    <rect key="frame" x="75" y="762" width="120" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ccc-t6-VBk">
+                    <rect key="frame" x="186" y="785" width="123" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="error"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="day_ash" id="MCu-du-ih0">
+                    <rect key="frame" x="23" y="175" width="52" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="day_ash" id="OEn-LF-0vx">
+                    <rect key="frame" x="23" y="209" width="52" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CHx-Rj-ake">
+                    <rect key="frame" x="31" y="215" width="39" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="day_ash" id="0Fa-YT-cO5">
+                    <rect key="frame" x="23" y="242" width="52" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TUE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9QT-Bh-oOg">
+                    <rect key="frame" x="34" y="248" width="32" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="day_red" id="Uvj-bd-YXD">
+                    <rect key="frame" x="23" y="275" width="52" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qcH-J6-cyj">
+                    <rect key="frame" x="34" y="281" width="32" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="day_ash" id="3yh-oX-hph">
+                    <rect key="frame" x="23" y="309" width="52" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fyV-YM-zAW">
+                    <rect key="frame" x="34" y="315" width="32" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="day_ash" id="sps-oI-Ib0">
+                    <rect key="frame" x="23" y="342" width="52" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FRI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lCw-ua-gI8">
+                    <rect key="frame" x="38" y="348" width="25" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="day_ash" id="LNW-R8-UE1">
+                    <rect key="frame" x="23" y="374" width="52" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SAT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3hY-XW-N5E">
+                    <rect key="frame" x="36" y="380" width="28" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qZ4-Vb-AN6">
+                    <rect key="frame" x="34" y="180" width="32" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:00 AM to 11:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5it-PO-NGH">
+                    <rect key="frame" x="83" y="178" width="142" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:00 AM to 11:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="D4h-EJ-TyZ">
+                    <rect key="frame" x="83" y="213" width="142" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:00 AM to 11:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="POd-qf-1IX">
+                    <rect key="frame" x="83" y="242" width="142" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:00 AM to 11:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ev3-DX-zad">
+                    <rect key="frame" x="83" y="276" width="142" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:00 AM to 11:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yDr-5z-z39">
+                    <rect key="frame" x="83" y="312" width="142" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:00 AM to 11:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dMP-Jo-3Nd">
+                    <rect key="frame" x="83" y="345" width="142" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CLOSED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="akS-nH-3No">
+                    <rect key="frame" x="83" y="377" width="142" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Romantic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sVO-Cd-chZ">
+                    <rect key="frame" x="23" y="465" width="295" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tic" id="D0R-QE-0Qz">
+                    <rect key="frame" x="23" y="542" width="42" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tic" id="uNf-HX-G33">
+                    <rect key="frame" x="23" y="594" width="42" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wi-Fi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oDL-MG-hlA">
+                    <rect key="frame" x="75" y="553" width="44" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5s2-eZ-2NY">
+                    <rect key="frame" x="75" y="606" width="44" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dJG-Pt-NXs">
+                    <rect key="frame" x="22" y="93" width="105" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="call"/>
+                    <connections>
+                        <action selector="call_action:" destination="-1" eventType="touchUpInside" id="lGW-KU-9vw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="802" y="416"/>
+        </view>
+        <view contentMode="scaleToFill" id="a6a-8o-Rwt">
+            <rect key="frame" x="0.0" y="0.0" width="282" height="245"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write Review" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="95B-Ck-arA">
+                    <rect key="frame" x="86" y="8" width="109" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" indicatorStyle="black" textAlignment="natural" id="Oki-8k-mVY">
+                    <rect key="frame" x="8" y="41" width="266" height="142"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.90971443352784698" green="0.91305751465007601" blue="0.9243177041799574" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Xbo-MM-i7L"/>
+                    </connections>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vyP-JF-HN8">
+                    <rect key="frame" x="8" y="196" width="266" height="41"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="13"/>
+                    <state key="normal" title="POST REVIEW" backgroundImage="blank_button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="post_review_action:" destination="-1" eventType="touchUpInside" id="UPQ-Pq-mJU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qBD-dT-n4I">
+                    <rect key="frame" x="252" y="3" width="19" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" backgroundImage="black_cross">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="close_review:" destination="-1" eventType="touchUpInside" id="BIY-qF-CQp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="305" y="893.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="s4c-8y-tXt">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="472"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ett-Hm-N6O">
+                    <rect key="frame" x="-12" y="0.0" width="332" height="472"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="c8f-p3-1wu"/>
+                        <outlet property="delegate" destination="-1" id="Pab-06-C43"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="696" y="1194"/>
+        </view>
+        <view contentMode="scaleToFill" id="lT9-PI-GuB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="317"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" id="ZdT-y4-mrj">
+                    <rect key="frame" x="0.0" y="280" width="320" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="currentPageIndicatorTintColor" red="1" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="pageControlValueDidChange:" destination="-1" eventType="valueChanged" id="9HY-oD-XtH"/>
+                    </connections>
+                </pageControl>
+                <view contentMode="scaleToFill" id="x4v-9n-sb9">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="317"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.85848721589999999" green="0.65852665349999995" blue="0.78464808490000004" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="313" y="1232.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="qCh-Qm-iyy">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="375"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M6y-L6-uez">
+                    <rect key="frame" x="51" y="8" width="122" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quality-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6T7-xh-6xy">
+                    <rect key="frame" x="11" y="47" width="62" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BxW-RM-hmZ">
+                    <rect key="frame" x="11" y="112" width="62" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nul-cA-JkC">
+                    <rect key="frame" x="11" y="180" width="52" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Environment-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xlh-J2-Hjy">
+                    <rect key="frame" x="11" y="246" width="101" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/5.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OF1-wg-Hgs">
+                    <rect key="frame" x="69" y="47" width="50" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/5.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RMe-vE-Bi7">
+                    <rect key="frame" x="69" y="113" width="50" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/5.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WJE-Iz-mrG">
+                    <rect key="frame" x="60" y="180" width="50" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/5.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VUu-5D-Zcd">
+                    <rect key="frame" x="111" y="246" width="50" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="isd-3W-qlR">
+                    <rect key="frame" x="10" y="319" width="221" height="39"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="15"/>
+                    <state key="normal" title="SUBMIT RATING">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="submit_rating:" destination="-1" eventType="touchUpInside" id="4Ty-Fv-fRQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="X2u-VN-oUN">
+                    <rect key="frame" x="212" y="7" width="20" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="black_cross"/>
+                    <connections>
+                        <action selector="close_rating:" destination="-1" eventType="touchUpInside" id="sSQ-W0-wCZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="393" y="1613.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="black_cross" width="28" height="28"/>
+        <image name="blank_button" width="455" height="86"/>
+        <image name="call" width="110" height="33"/>
+        <image name="cross" width="45" height="45"/>
+        <image name="day_ash" width="66" height="25"/>
+        <image name="day_red" width="66" height="25"/>
+        <image name="dropdown_arrow" width="18" height="10"/>
+        <image name="error" width="195" height="59"/>
+        <image name="info_select" width="115" height="68"/>
+        <image name="line" width="518" height="1"/>
+        <image name="map" width="118" height="68"/>
+        <image name="menu" width="112" height="68"/>
+        <image name="photo" width="135" height="68"/>
+        <image name="red_checkin" width="65" height="65"/>
+        <image name="red_like" width="65" height="65"/>
+        <image name="red_rate" width="65" height="65"/>
+        <image name="red_recommend" width="65" height="65"/>
+        <image name="red_review" width="65" height="65"/>
+        <image name="review" width="160" height="68"/>
+        <image name="tic" width="45" height="45"/>
+    </resources>
+</document>

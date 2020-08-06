@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="OpenSans-Bold_4.ttf">
+            <string>OpenSans-Bold</string>
+            <string>OpenSans-Bold</string>
+        </mutableArray>
+        <mutableArray key="OpenSans-Regular_4.ttf">
+            <string>OpenSans</string>
+        </mutableArray>
+        <mutableArray key="OpenSans-Semibold_4.ttf">
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+            <string>OpenSans-Semibold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DashboardViewController">
+            <connections>
+                <outlet property="cuisine_nonsel" destination="l77-ZL-Xe2" id="3TX-pM-7G3"/>
+                <outlet property="cuisine_sel" destination="G2p-ry-ZOq" id="mSV-Co-LMh"/>
+                <outlet property="filter_view" destination="k5m-of-h3x" id="0WO-jy-GYp"/>
+                <outlet property="open_nonsel" destination="UUt-m3-Nao" id="PMb-es-VX9"/>
+                <outlet property="open_sel" destination="y96-H7-KGc" id="VyV-BU-Jjz"/>
+                <outlet property="rest_nonsel" destination="G5E-XC-qyi" id="455-En-hKl"/>
+                <outlet property="rest_sel" destination="Oct-4t-jld" id="a1c-b4-Jxe"/>
+                <outlet property="search_btn" destination="JCE-tq-YAr" id="SVO-Ih-fJw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" id="ynw-Xc-ij8">
+                    <rect key="frame" x="-1" y="0.0" width="321" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JCE-tq-YAr">
+                    <rect key="frame" x="117" y="186" width="84" height="87"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="button"/>
+                    <connections>
+                        <action selector="search_action:" destination="-1" eventType="touchUpInside" id="2rv-uB-n0T"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" id="Szr-JC-S1U">
+                    <rect key="frame" x="-1" y="395" width="321" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filter" id="iy8-ca-6JM">
+                    <rect key="frame" x="19" y="106" width="281" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="WHAT ARE YOU LOOKING FOR" textAlignment="natural" minimumFontSize="17" id="uxm-qb-wiK">
+                    <rect key="frame" x="27" y="116" width="187" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                            <color key="value" red="0.39936474116161613" green="0.39936474116161613" blue="0.39936474116161613" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="9ib-1y-eIO"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jMh-jW-EuX">
+                    <rect key="frame" x="222" y="106" width="78" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <action selector="filter_action:" destination="-1" eventType="touchUpInside" id="bwl-L7-Q9j"/>
+                    </connections>
+                </button>
+                <view hidden="YES" contentMode="scaleToFill" id="k5m-of-h3x">
+                    <rect key="frame" x="0.0" y="228" width="320" height="293"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b49-hb-TmW">
+                            <rect key="frame" x="129" y="14" width="61" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="18"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ThO-OH-Evu">
+                            <rect key="frame" x="46" y="103" width="134" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuisine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hwm-ch-33j">
+                            <rect key="frame" x="46" y="148" width="134" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open Now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UZv-pr-R93">
+                            <rect key="frame" x="46" y="193" width="134" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Oct-4t-jld">
+                            <rect key="frame" x="8" y="103" width="32" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="filter_checked"/>
+                            <connections>
+                                <action selector="rest_select:" destination="-1" eventType="touchUpInside" id="dwM-Pi-nKC"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="G2p-ry-ZOq">
+                            <rect key="frame" x="8" y="148" width="32" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="filter_checked"/>
+                            <connections>
+                                <action selector="cuisine_select:" destination="-1" eventType="touchUpInside" id="arv-n2-JzX"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="l77-ZL-Xe2">
+                            <rect key="frame" x="9" y="148" width="32" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="filter_blank"/>
+                            <connections>
+                                <action selector="cuisine_select:" destination="-1" eventType="touchUpInside" id="PaW-b7-hWd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="y96-H7-KGc">
+                            <rect key="frame" x="8" y="193" width="32" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="filter_checked"/>
+                            <connections>
+                                <action selector="open_select:" destination="-1" eventType="touchUpInside" id="eST-ey-C0r"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UUt-m3-Nao">
+                            <rect key="frame" x="9" y="193" width="32" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="filter_blank"/>
+                            <connections>
+                                <action selector="open_select:" destination="-1" eventType="touchUpInside" id="aKd-zE-oii"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AOp-sA-Dq0">
+                            <rect key="frame" x="8" y="14" width="37" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="filter_back"/>
+                            <connections>
+                                <action selector="filter_backAction:" destination="-1" eventType="touchUpInside" id="ouw-xa-Ucj"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="t0O-qe-6wE">
+                            <rect key="frame" x="8" y="239" width="304" height="43"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="15"/>
+                            <state key="normal" title="APPLY" backgroundImage="apply">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="filter_apply:" destination="-1" eventType="touchUpInside" id="zZQ-0p-tjs"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="G5E-XC-qyi">
+                            <rect key="frame" x="9" y="103" width="32" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="filter_blank"/>
+                            <connections>
+                                <action selector="rest_select:" destination="-1" eventType="touchUpInside" id="9KN-6r-OYN"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="457" y="203"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="apply" width="538" height="73"/>
+        <image name="bg" width="640" height="960"/>
+        <image name="button" width="153" height="157"/>
+        <image name="filter" width="565" height="90"/>
+        <image name="filter_back" width="28" height="21"/>
+        <image name="filter_blank" width="40" height="40"/>
+        <image name="filter_checked" width="40" height="40"/>
+        <image name="food" width="620" height="306"/>
+    </resources>
+</document>
